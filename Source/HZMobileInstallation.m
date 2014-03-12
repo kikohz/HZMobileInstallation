@@ -8,6 +8,8 @@
 #import <dlfcn.h>
 #import "HZMobileInstallation.h"
 
+#define kApplicationType   @"ApplicationType"
+
 typedef int (*MobileInstallationBrowse)(NSDictionary *options, int (*mibcallback)(NSDictionary *dict, id usercon), id usercon);
 
 typedef int (*MobileInstallationUninstall)(NSString *appCode, NSDictionary *dict, void *na, NSString *strna);

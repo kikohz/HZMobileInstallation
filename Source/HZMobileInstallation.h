@@ -11,7 +11,7 @@
 
 #define kUser              @"User"
 #define kSystem            @"System"
-#define kApplicationType   @"ApplicationType"
+
 
 
 typedef enum
