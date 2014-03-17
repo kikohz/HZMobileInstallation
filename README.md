@@ -5,9 +5,24 @@ Achieved `MobileInstallation.framework` inside install, uninstall, appList.
 
 ###Usage
 
-Add files to the project
+Add a pod entry to your Podfile:
 
-######Install
+	pod 'HZMobileInstallation', '~> 0.1'
+	
+Install the pod(s) by running:
+
+	pod install
+	
+add entitlements file
+
+open keychain will automatically generate entitlements file
+
+![](http://ww3.sinaimg.cn/large/62b50d84tw1eeit6olyoyj20h104fjre.jpg)
+
+Reference `Source/test.entitlements` Set 
+
+
+######Install ipa
 
 	NSString *docpath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
     NSString *path = [docpath stringByAppendingPathComponent:@"test.ipa"];
